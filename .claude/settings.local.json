@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_in_Chrome__browser_batch",
+      "Bash(npm create *)",
+      "PowerShell(cd \"D:\\\\CLAUDE PROYECTOS\\\\ProMx Sanitarios\"; npm create vite@latest . -- --template react 2>&1 | Select-Object -First 30)",
+      "PowerShell(& \"C:\\\\Program Files\\\\nodejs\\\\node.exe\" --version 2>&1)",
+      "PowerShell(& \"C:\\\\Users\\\\Corral\\\\AppData\\\\Roaming\\\\nvm\\\\v20.18.3\\\\node.exe\" --version 2>&1)",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "WebFetch(domain:www.facebook.com)",
+      "WebFetch(domain:gamequic.github.io)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(tasklist)",
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__computer",
+      "mcp__Claude_in_Chrome__read_console_messages",
+      "Bash(npm install *)",
+      "PowerShell($env:Path = [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\); cd \"D:\\\\CLAUDE PROYECTOS\\\\ProMx Sanitarios\"; npm install --save-dev gh-pages 2>&1 | Select-Object -Last 5)",
+      "mcp__Claude_in_Chrome__javascript_tool",
+      "PowerShell(Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force; $env:Path = [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\); Get-Process node -ErrorAction SilentlyContinue | Stop-Process -Force; Start-Sleep 1; cd \"D:\\\\CLAUDE PROYECTOS\\\\ProMx Sanitarios\"; Start-Job -ScriptBlock { Set-ExecutionPolicy Bypass -Scope Process -Force; $env:Path = [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\); cd \"D:\\\\CLAUDE PROYECTOS\\\\ProMx Sanitarios\"; npm run dev } | Out-Null; Start-Sleep 4; Write-Host \"done\")",
+      "Bash(del \"D:\\\\CLAUDE PROYECTOS\\\\ProMx Sanitarios\\\\public\\\\visor.html\")"
+    ]
+  }
+}
