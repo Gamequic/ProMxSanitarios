@@ -108,7 +108,7 @@ export default function Hero() {
               transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
               className="relative will-change-transform">
               <div className="absolute inset-0 rounded-full bg-brand-orange blur-[80px] opacity-20 scale-125" />
-              <img src={`${import.meta.env.BASE_URL}logo.perro.jpg`} alt="ProMX Sanitarios"
+              <img src={`${import.meta.env.BASE_URL}logo.perro.jpg`} alt="ProMx Sanitarios"
                 loading="eager"
                 className="relative w-72 h-72 xl:w-96 xl:h-96 rounded-full object-cover ring-8 ring-brand-orange/30 shadow-2xl shadow-orange-200" />
               {/* Orbiting badge */}

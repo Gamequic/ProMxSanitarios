@@ -38,7 +38,7 @@ export default function Navbar() {
         <a href="#inicio" className="flex items-center gap-3 shrink-0">
           <img
             src={`${import.meta.env.BASE_URL}logo.perro.jpg`}
-            alt="ProMX"
+            alt="ProMx"
             className="w-9 h-9 rounded-full object-cover ring-2 ring-brand-orange"
           />
           <div className="leading-none">

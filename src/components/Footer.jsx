@@ -21,7 +21,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <a href="#inicio" className="flex items-center gap-3 mb-5">
-              <img src={`${import.meta.env.BASE_URL}logo.perro.jpg`} alt="ProMX"
+              <img src={`${import.meta.env.BASE_URL}logo.perro.jpg`} alt="ProMx"
                 className="w-10 h-10 rounded-full object-cover ring-2 ring-brand-orange" />
               <div>
                 <p className="font-display font-bold text-white text-lg tracking-tight">
@@ -86,7 +86,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-700">
-          <p>© {new Date().getFullYear()} ProMX Sanitarios · Todos los derechos reservados</p>
+          <p>© {new Date().getFullYear()} ProMx Sanitarios · Todos los derechos reservados</p>
           <p className="flex items-center gap-1.5">
             Desarrollado por{' '}
             <a

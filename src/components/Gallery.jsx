@@ -18,10 +18,10 @@ const equipos = [
   // Nuevas
   { src: '481816190_944977064511377_5210626917609545326_n.jpg',  alt: 'Interior VIP — madera y lavabos'           },
   { src: '485768181_957241196618297_4718903319856251587_n.jpg',  alt: 'Sanitarios portátiles en campo'            },
-  { src: '492088354_978098621199221_4300014041076164614_n.jpg',  alt: 'Camión y remolque VIP ProMX'               },
+  { src: '492088354_978098621199221_4300014041076164614_n.jpg',  alt: 'Camión y remolque VIP ProMx'               },
   { src: '493911181_984411260567957_2095344062941957863_n.jpg',  alt: 'Remolque VIP abierto'                      },
   { src: '499455876_1000264482315968_2831771990050081410_n.jpg', alt: 'Remolque Sanitarios VIP — exterior día'    },
-  { src: '504676956_17862584154418413_1429441603884571496_n.jpg',alt: 'Regaderas portátiles ProMX'                },
+  { src: '504676956_17862584154418413_1429441603884571496_n.jpg',alt: 'Regaderas portátiles ProMx'                },
 ]
 
 const eventosSociales = [
