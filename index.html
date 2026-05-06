@@ -1,16 +1,133 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/jpeg" href="/logo.perro.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="ProMx Sanitarios – Renta de sanitarios portátiles premium para eventos en México" />
-    <title>ProMx Sanitarios – Renta Premium</title>
+
+    <!-- Primary SEO -->
+    <title>Renta de Baños Portátiles en Ciudad Juárez | ProMX Sanitarios</title>
+    <meta name="description" content="Renta de baños portátiles para construcción, eventos y obra en Ciudad Juárez. Sanitarios modernos, limpios y con entrega incluida. ¡Cotiza ahora!" />
+    <meta name="keywords" content="renta de baños portátiles Juárez, baños portátiles Ciudad Juárez, renta sanitarios portátiles, renta baños construcción Juárez, baños móviles Juárez, portable toilet rental Juarez" />
+    <link rel="canonical" href="https://promxsanitarios.com/" />
+
+    <!-- Geo targeting -->
+    <meta name="geo.region" content="MX-CHH" />
+    <meta name="geo.placename" content="Ciudad Juárez, Chihuahua, México" />
+    <meta name="geo.position" content="31.6904;-106.4245" />
+    <meta name="ICBM" content="31.6904, -106.4245" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:site_name" content="ProMX Sanitarios" />
+    <meta property="og:title" content="Renta de Baños Portátiles en Ciudad Juárez | ProMX Sanitarios" />
+    <meta property="og:description" content="Renta de baños portátiles para construcción, eventos y obra en Ciudad Juárez. Sanitarios modernos, limpios y con entrega incluida." />
+    <meta property="og:image" content="https://promxsanitarios.com/logo.perro.jpg" />
+    <meta property="og:url" content="https://promxsanitarios.com/" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Renta de Baños Portátiles en Ciudad Juárez | ProMX Sanitarios" />
+    <meta name="twitter:description" content="Renta de baños portátiles para construcción, eventos y obra en Ciudad Juárez. Cotiza ahora." />
+    <meta name="twitter:image" content="https://promxsanitarios.com/logo.perro.jpg" />
+
+    <!-- LocalBusiness structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://promxsanitarios.com/#business",
+      "name": "ProMX Sanitarios",
+      "alternateName": "ProMx Renta de Sanitarios Portátiles",
+      "description": "Empresa de renta de baños portátiles para eventos, construcción y obras en Ciudad Juárez, Chihuahua.",
+      "url": "https://promxsanitarios.com",
+      "logo": "https://promxsanitarios.com/logo.perro.jpg",
+      "image": "https://promxsanitarios.com/logo.perro.jpg",
+      "telephone": "+52-656-318-2873",
+      "email": "info@promxsanitarios.mx",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ciudad Juárez",
+        "addressRegion": "Chihuahua",
+        "addressCountry": "MX"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 31.6904,
+        "longitude": -106.4245
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Ciudad Juárez"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "07:00",
+          "closes": "19:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/p/ProMx-Renta-de-Mobiliario-100069972773623/"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Renta",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renta de Baños Portátiles" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renta de Baños VIP" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renta de Generadores" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renta de Aires Acondicionados Portátiles" } }
+        ]
+      },
+      "priceRange": "$$"
+    }
+    </script>
+
+    <!-- WebSite schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://promxsanitarios.com",
+      "name": "ProMX Sanitarios",
+      "description": "Renta de baños portátiles en Ciudad Juárez",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://promxsanitarios.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- GitHub Pages SPA routing restore -->
+    <script>
+      (function(l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&')
+          }).join('?')
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash)
+        }
+      }(window.location))
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/assets/index-dSwTlWvh.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-oIGpPrph.css">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KR5K9X1HD3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KR5K9X1HD3');
+    </script>
+    <script type="module" crossorigin src="/assets/index-COSlV6pZ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-pCjdiyRD.css">
   </head>
   <body>
     <div id="root"></div>
