@@ -7,15 +7,14 @@ const BASE = import.meta.env.BASE_URL
 /* ── Categorías ─────────────────────────────────────────────────────────── */
 
 const equipos = [
-  { src: '515279347_1034557125553370_2425595903723611783_n.jpg', alt: 'Interior Sanitario VIP con lavabos'         },
-  { src: '562165722_1119509333724815_5365071678676617282_n.jpg', alt: 'Sanitario portátil azul'                   },
-  { src: '569126232_1127017002974048_9025421163241743651_n.jpg', alt: 'Unidades de aire evaporativo'              },
-  { src: '569626234_1125240783151670_249874472817878227_n.jpg',  alt: 'Sanitario portátil rosa'                   },
-  { src: '574341896_1133871485621933_1969381361856800329_n.jpg', alt: 'Sanitario portátil azul'                   },
-  { src: '585411825_1150711327271282_8530211814017261878_n.jpg', alt: 'Sanitario portátil naranja'                },
-  { src: '619185335_1197491849259896_2153991311886151598_n.jpg', alt: 'Remolque VIP con aire acondicionado'       },
-  { src: '619215967_1197491815926566_2436997867748961667_n.jpg', alt: 'Sanitario portátil azul — vista frontal'  },
-  // Nuevas
+  { src: '585411825_1150711327271282_8530211814017261878_n.jpg', alt: 'Remolque VIP ProMx — Vive la Experiencia'  },
+  { src: 'vip-interior-lavabos.jpg',                             alt: 'Interior baño VIP — lavabos y cabinas'     },
+  { src: 'vip-interior-toilet.jpg',                             alt: 'Interior baño VIP — cabinas con inodoro'   },
+  { src: 'vip-remolque-noche.jpg',                              alt: 'Remolque VIP abierto en evento nocturno'   },
+  { src: 'vip-remolque-renta.jpg',                              alt: 'Renta de Remolque VIP con 20 sanitarios'   },
+  { src: '619185335_1197491849259896_2153991311886151598_n.jpg', alt: 'Sanitarios portátiles en zona industrial'  },
+  { src: '619215967_1197491815926566_2436997867748961667_n.jpg', alt: 'Fila de sanitarios en zona industrial'     },
+  { src: '515279347_1034557125553370_2425595903723611783_n.jpg', alt: 'Sanitarios portátiles para obras'          },
   { src: '481816190_944977064511377_5210626917609545326_n.jpg',  alt: 'Interior VIP — madera y lavabos'           },
   { src: '485768181_957241196618297_4718903319856251587_n.jpg',  alt: 'Sanitarios portátiles en campo'            },
   { src: '492088354_978098621199221_4300014041076164614_n.jpg',  alt: 'Camión y remolque VIP ProMx'               },
@@ -25,28 +24,21 @@ const equipos = [
 ]
 
 const eventosSociales = [
-  { src: '561576648_1120042640338151_5774772823476929256_n.jpg', alt: 'Evento social en jardín'                   },
-  { src: '566302073_1120106590331756_7621744321792667018_n.jpg', alt: 'Equipamiento en evento al aire libre'      },
-  { src: '567174556_1122683786740703_547262557842352274_n.jpg',  alt: 'Unidad VIP en evento privado'              },
-  { src: '573516268_1131709429171472_1988645665914216992_n.jpg', alt: 'Sanitarios en jardín para evento social'   },
-  { src: '580479533_1142778351397913_4215658575748729530_n.jpg', alt: 'Sanitario VIP en exteriores'               },
-  { src: '598277309_1167640868911661_4360731357159079449_n.jpg', alt: 'Logística en evento deportivo'             },
-  { src: '619202282_1197491822593232_1011741764538080197_n.jpg', alt: 'Remolque VIP en exterior de salón'         },
-  // Nuevas
+  { src: '580479533_1142778351397913_4215658575748729530_n.jpg', alt: 'ProMx Sanitarios en Tecate Supremo'        },
+  { src: '598277309_1167640868911661_4360731357159079449_n.jpg', alt: 'Renta de Remolque VIP con 20 sanitarios'   },
+  { src: '619202282_1197491822593232_1011741764538080197_n.jpg', alt: 'Sanitario portátil en exterior'            },
   { src: '492024108_978098654532551_1259764636512399979_n.jpg',  alt: 'Sanitarios en evento al aire libre'        },
   { src: '493846729_984411170567966_8542408235523808037_n.jpg',  alt: 'Remolque VIP en evento nocturno'           },
 ]
 
 const conciertos = [
-  { src: '562383894_1121552090187206_3555620322367431754_n.jpg', alt: 'Sanitarios en recinto para eventos masivos'},
-  { src: '570162459_1127845422891206_2572849987299241360_n.jpg', alt: 'Fila de sanitarios en estadio'            },
-  { src: '607977609_1181037694238645_5828729156667204239_n.jpg', alt: 'Sanitarios en festival o concierto'        },
+  { src: '607977609_1181037694238645_5828729156667204239_n.jpg', alt: 'Fila de sanitarios en festival'            },
 ]
 
 const construccion = [
+  { src: 'construccion-promo.jpg',                              alt: 'ProMx en cada obra — Higiene y Eficiencia' },
   { src: '569597447_1126178113057937_5841637683247518447_n.jpg', alt: 'Unidades en zona de obra o terracería'     },
   { src: '571261840_1126166686392413_4651382303324542437_n.jpg', alt: 'Sanitario en zona de construcción'         },
-  // Nueva
   { src: '492066152_977420801267003_2519004597112343316_n.jpg',  alt: 'Sanitario en obra con maquinaria'          },
 ]
 
@@ -71,6 +63,7 @@ const tabs = [
 function Card({ img, index, onClick }) {
   const ref    = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-40px' })
+  const eager  = index < 4
 
   return (
     <motion.div
@@ -83,7 +76,9 @@ function Card({ img, index, onClick }) {
       className="group relative cursor-pointer rounded-3xl overflow-hidden bg-gray-100 aspect-square shadow-sm hover:shadow-xl transition-shadow duration-300 will-change-transform"
     >
       <img
-        src={BASE + img.src} alt={img.alt} loading="lazy"
+        src={BASE + img.src} alt={img.alt}
+        loading={eager ? 'eager' : 'lazy'}
+        decoding="async"
         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
