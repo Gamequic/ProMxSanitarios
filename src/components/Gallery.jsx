@@ -7,7 +7,6 @@ const BASE = import.meta.env.BASE_URL
 /* ── Categorías ─────────────────────────────────────────────────────────── */
 
 const equipos = [
-  { src: '585411825_1150711327271282_8530211814017261878_n.jpg', alt: 'Remolque VIP ProMx — Vive la Experiencia'  },
   { src: 'vip-interior-lavabos.jpg',                             alt: 'Interior baño VIP — lavabos y cabinas'     },
   { src: 'vip-interior-toilet.jpg',                             alt: 'Interior baño VIP — cabinas con inodoro'   },
   { src: 'vip-remolque-noche.jpg',                              alt: 'Remolque VIP abierto en evento nocturno'   },
